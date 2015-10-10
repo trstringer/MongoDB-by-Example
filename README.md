@@ -4,14 +4,14 @@
 
 ## Set database context
 
-### SQL Server
+#### SQL Server
 
 ```sql
 use YourDatabase;
 go
 ```
 
-### MongoDB (shell)
+#### MongoDB (shell)
 
 ```javascript
 use YourDatabase
@@ -20,14 +20,14 @@ use YourDatabase
 ## Read entire table/collection
 
 
-### SQL Server
+#### SQL Server
 
 ```sql
 SELECT *
 FROM MyTable;
 ```
 
-### MongoDB (shell)
+#### MongoDB (shell)
 
 ```javascript
 db.MyCollection.find();
