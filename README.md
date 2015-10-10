@@ -14,11 +14,10 @@ go
 #### MongoDB (shell)
 
 ```javascript
-use YourDatabase
+use yourDatabase;
 ```
 
 ## Read entire table/collection
-
 
 #### SQL Server
 
@@ -30,8 +29,26 @@ FROM MyTable;
 #### MongoDB (shell)
 
 ```javascript
-db.MyCollection.find();
+db.myCollection.find();
 
 // or for prettified output
-db.MyCollection.find().pretty();
+db.myCollection.find().pretty();
+```
+
+## Read certain columns/fields from the table/collection
+
+#### SQL Server
+
+```sql
+SELECT FirstName, LastName
+FROM MyTable;
+```
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.find({}, {firstName: 1, lastName: 1}); // .pretty()
+
+// and to NOT select the default _id field
+db.myCollection.find({}, {_id: -1, firstName: 1, lastName: 1}); // .pretty()
 ```
