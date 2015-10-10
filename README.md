@@ -66,5 +66,5 @@ WHERE LastName = 'Stringer';
 #### MongoDB (shell)
 
 ```javascript
-db.myCollection.update({ firstName: 'Thomas' }, { $set: { lastName: 'Stringer' } });
+db.myCollection.update({ lastName: 'Stringer' }, { $set: { firstName: 'Thomas' } });
 ```
