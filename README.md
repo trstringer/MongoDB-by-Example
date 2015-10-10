@@ -16,3 +16,22 @@ go
 ```javascript
 use YourDatabase
 ```
+
+## Read entire table/collection
+
+
+### SQL Server
+
+```sql
+SELECT *
+FROM MyTable;
+```
+
+### MongoDB (shell)
+
+```javascript
+db.MyCollection.find();
+
+// or for prettified output
+db.MyCollection.find().pretty();
+```
