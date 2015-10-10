@@ -50,5 +50,5 @@ FROM MyTable;
 db.myCollection.find({}, {firstName: 1, lastName: 1}); // .pretty()
 
 // and to NOT select the default _id field
-db.myCollection.find({}, {_id: -1, firstName: 1, lastName: 1}); // .pretty()
+db.myCollection.find({}, {_id: 0, firstName: 1, lastName: 1}); // .pretty()
 ```
