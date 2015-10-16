@@ -2,7 +2,7 @@
 
 *Learn MongoDB  through examples*
 
-- [create test data](.\test-data\test-data.js)
+- [create test data](/test-data/test-data.js)
 
 ## Set database context
 
