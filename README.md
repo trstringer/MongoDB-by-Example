@@ -12,7 +12,7 @@
 use yourDatabase;
 ```
 
-## Read entire table/collection
+## Read entire collection
 
 #### MongoDB (shell)
 
@@ -23,7 +23,7 @@ db.myCollection.find();
 db.myCollection.find().pretty();
 ```
 
-## Read certain columns/fields from the table/collection
+## Read certain fields from the collection
 
 #### MongoDB (shell)
 
@@ -34,7 +34,7 @@ db.myCollection.find({}, { firstName: 1, lastName: 1 }); // .pretty()
 db.myCollection.find({}, { _id: 0, firstName: 1, lastName: 1 }); // .pretty()
 ```
 
-## Update row(s)/document(s) with search predicate
+## Update document(s) with search predicate
 
 #### MongoDB (shell)
 

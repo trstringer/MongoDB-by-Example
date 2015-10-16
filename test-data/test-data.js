@@ -1,3 +1,10 @@
+/*
+in order to run this script just use the mongo shell and 
+pass the javascript file to it on the command line:
+
+mongo test-data.js
+*/
+
 var mongo = new Mongo();
 var db = mongo.getDB('myDatabase');
 
