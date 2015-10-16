@@ -1,15 +1,10 @@
-# MongoDB for the SQL Server person
+# Learn MongoDB by Examples
 
-*Learn MongoDB and transfer your SQL Server knowledge through examples*
+*Learn MongoDB  through examples*
+
+- [create test data](.\test-data\test-data.js)
 
 ## Set database context
-
-#### SQL Server
-
-```sql
-use YourDatabase;
-go
-```
 
 #### MongoDB (shell)
 
@@ -18,13 +13,6 @@ use yourDatabase;
 ```
 
 ## Read entire table/collection
-
-#### SQL Server
-
-```sql
-SELECT *
-FROM MyTable;
-```
 
 #### MongoDB (shell)
 
@@ -37,13 +25,6 @@ db.myCollection.find().pretty();
 
 ## Read certain columns/fields from the table/collection
 
-#### SQL Server
-
-```sql
-SELECT FirstName, LastName
-FROM MyTable;
-```
-
 #### MongoDB (shell)
 
 ```javascript
@@ -54,14 +35,6 @@ db.myCollection.find({}, { _id: 0, firstName: 1, lastName: 1 }); // .pretty()
 ```
 
 ## Update row(s)/document(s) with search predicate
-
-#### SQL Server
-
-```sql
-UPDATE MyTable
-SET FirstName = 'Thomas'
-WHERE LastName = 'Stringer';
-```
 
 #### MongoDB (shell)
 
