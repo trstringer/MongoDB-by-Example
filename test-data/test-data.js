@@ -6,7 +6,7 @@ mongo test-data.js
 */
 
 var mongo = new Mongo();
-var db = mongo.getDB('myDatabase');
+var db = mongo.getDB('yourDatabase');
 
 print('deleting all documents from myCollection...');
 db.myCollection.remove({});
