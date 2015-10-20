@@ -2,7 +2,9 @@
 
 *Learn MongoDB  through examples*
 
-- [create test data](/test-data/test-data.js)
+#### General tasks
+- [create test data](/test-data/test-data.js) for the purpose of running these examples
+- [set database context](#set-database-context)
 
 ## Set database context
 
