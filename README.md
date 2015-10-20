@@ -6,6 +6,13 @@
 - [create test data](/test-data/test-data.js) for the purpose of running these examples
 - [set database context](#set-database-context)
 
+#### Read data
+- [read entire collection](#read-entire-collection)
+- [read certain fields from the collection](#read-certain-fields-from-the-collection)
+
+#### Update data
+- [update documents with search predicate](#update-documents-with-search-predicate)
+
 ## Set database context
 
 #### MongoDB (shell)
@@ -36,7 +43,7 @@ db.myCollection.find({}, { firstName: 1, lastName: 1 }); // .pretty()
 db.myCollection.find({}, { _id: 0, firstName: 1, lastName: 1 }); // .pretty()
 ```
 
-## Update document(s) with search predicate
+## Update documents with search predicate
 
 #### MongoDB (shell)
 
