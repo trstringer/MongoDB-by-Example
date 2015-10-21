@@ -9,9 +9,12 @@
 #### Read data
 - [read entire collection](#read-entire-collection)
 - [read certain fields from the collection](#read-certain-fields-from-the-collection)
+- [search documents with search embedded field](#Search-documents-with-search-embedded-field)
+- [search documents with search parent embedded field and display embedded fields](#Search-documents-with-search-parent-embedded-field-and-display-embedded-fields)
 
 #### Update data
 - [update documents with search predicate](#update-documents-with-search-predicate)
+- [update documents with embedded search predicate](#Update-documents-with-embedded-search-predicate)
 
 ## Set database context
 
@@ -43,6 +46,33 @@ db.myCollection.find({}, { firstName: 1, lastName: 1 }); // .pretty()
 db.myCollection.find({}, { _id: 0, firstName: 1, lastName: 1 }); // .pretty()
 ```
 
+## Search documents with search embedded field
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.find(
+    { 'address.city': 'Atlanta' }
+); // .pretty()
+```
+
+## Search documents with search parent embedded field and display embedded fields
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.find(
+    { 'address.city': 'Atlanta' },
+    {
+        _id: 0,
+        firstName: 1,
+        lastName: 1,
+        'address.city': 1,
+        'address.state': 1
+    }
+); // .pretty()
+```
+
 ## Update documents with search predicate
 
 #### MongoDB (shell)
@@ -55,5 +85,16 @@ db.myCollection.update(
             firstName: 'Thomas' 
         } 
     }
+);
+```
+
+## Update documents with embedded search predicate
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.update(
+    { 'address.city': 'Atlanta' },
+    { $set: { 'address.city': 'ATL' }}
 );
 ```
