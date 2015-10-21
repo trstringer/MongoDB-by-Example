@@ -9,12 +9,12 @@
 #### Read data
 - [read entire collection](#read-entire-collection)
 - [read certain fields from the collection](#read-certain-fields-from-the-collection)
-- [search documents with search embedded field](#Search-documents-with-search-embedded-field)
-- [search documents with search parent embedded field and display embedded fields](#Search-documents-with-search-parent-embedded-field-and-display-embedded-fields)
+- [search documents with search embedded field](#search-documents-with-search-embedded-field)
+- [search documents with search parent embedded field and display embedded fields](#search-documents-with-search-parent-embedded-field-and-display-embedded-fields)
 
 #### Update data
 - [update documents with search predicate](#update-documents-with-search-predicate)
-- [update documents with embedded search predicate](#Update-documents-with-embedded-search-predicate)
+- [update documents with embedded search predicate](#update-documents-with-embedded-search-predicate)
 
 ## Set database context
 
