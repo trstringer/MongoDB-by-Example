@@ -9,6 +9,7 @@
 #### Read data
 - [read entire collection](#read-entire-collection)
 - [read certain fields from the collection](#read-certain-fields-from-the-collection)
+- [search documents with search parent field](#Search-documents-with-search-parent-field)
 - [search documents with search embedded field](#search-documents-with-search-embedded-field)
 - [search documents with search parent embedded field and display embedded fields](#search-documents-with-search-parent-embedded-field-and-display-embedded-fields)
 
@@ -44,6 +45,16 @@ db.myCollection.find({}, { firstName: 1, lastName: 1 }); // .pretty()
 
 // and to NOT select the default _id field
 db.myCollection.find({}, { _id: 0, firstName: 1, lastName: 1 }); // .pretty()
+```
+
+## Search documents with search parent field
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.find(
+    { firstName: 'Thomas' }
+); // .pretty()
 ```
 
 ## Search documents with search embedded field
