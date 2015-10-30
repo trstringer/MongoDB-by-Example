@@ -9,7 +9,7 @@
 #### Read data
 - [read entire collection](#read-entire-collection)
 - [read certain fields from the collection](#read-certain-fields-from-the-collection)
-- [search documents with search parent field](#Search-documents-with-search-parent-field)
+- [search documents with search parent field](#search-documents-with-search-parent-field)
 - [search documents with search embedded field](#search-documents-with-search-embedded-field)
 - [search documents with search parent embedded field and display embedded fields](#search-documents-with-search-parent-embedded-field-and-display-embedded-fields)
 
