@@ -16,6 +16,7 @@
 #### Update data
 - [update documents with search predicate](#update-documents-with-search-predicate)
 - [update documents with embedded search predicate](#update-documents-with-embedded-search-predicate)
+- [increment or decrement document fields](#increment-or-decrement-document-fields)
 
 ## Set database context
 
@@ -107,5 +108,20 @@ db.myCollection.update(
 db.myCollection.update(
     { 'address.city': 'Atlanta' },
     { $set: { 'address.city': 'ATL' }}
+);
+```
+
+## Increment or decrement document fields
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.update(
+    { firstName: 'Alexis', lastName: 'Andrews' },
+    {
+        $inc: {
+            age: 1
+        }
+    }
 );
 ```

@@ -25,7 +25,7 @@ var documents = [
     },
     {
         firstName: 'Alexis',
-        lastName: '	Andrews',
+        lastName: 'Andrews',
         age: 25,
         gender: 'female',
         address: {
