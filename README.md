@@ -18,6 +18,9 @@
 - [update documents with embedded search predicate](#update-documents-with-embedded-search-predicate)
 - [increment or decrement document fields](#increment-or-decrement-document-fields)
 
+#### Delete data
+- [delete all documents in the collection](#delete-all-documents-in-the-collection)
+
 ## Set database context
 
 #### MongoDB (shell)
@@ -124,4 +127,12 @@ db.myCollection.update(
         }
     }
 );
+```
+
+## Delete All Documents in the Collection
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.remove({});
 ```
