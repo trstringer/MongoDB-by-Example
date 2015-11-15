@@ -20,6 +20,7 @@
 
 #### Delete data
 - [delete all documents in the collection](#delete-all-documents-in-the-collection)
+- [delete all documents that match a predicate](#delete-all-documents-that-match-a-predicate)
 
 ## Set database context
 
@@ -135,4 +136,12 @@ db.myCollection.update(
 
 ```javascript
 db.myCollection.remove({});
+```
+
+## Delete All Documents that match a Predicate
+
+#### MongoDB (shell)
+
+```javascript
+db.myCollection.remove({firstName: 'Thomas'});
 ```
